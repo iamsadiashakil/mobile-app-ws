@@ -28,6 +28,17 @@ It includes **JWT-based authentication & authorization**, **HATEOAS links**, and
 
 ---
 
+## **Unit Testing**
+Unit tests are implemented for the service layer using **JUnit 5** and **Mockito**.
+
+### Example: `UserServiceImplTest`
+Key tests include:
+- **`testGetUser()`** – Verifies that a user can be fetched by email.
+- **`testGetUser_throwNotFoundException()`** – Ensures a `RecordNotFoundException` is thrown when a user is not found.
+- **`testCreateUser()`** – Tests user creation with mocked dependencies (`UserRepository`, `BCryptPasswordEncoder`, `RandomIdGenerator`).
+
+---
+
 ## **API Endpoints**
 
 ### **Authentication**
@@ -136,6 +147,6 @@ src/main/java/com/appsdeveloperblog/app/ws/mobileappws/
 
 ## **Future Enhancements**
 
-* Add unit and integration tests.
+* Add integration tests with Testcontainers.
 * Implement role-based access control (RBAC).
 * Add Swagger/OpenAPI documentation.
