@@ -67,7 +67,7 @@ Key tests include:
 ---
 
 ## **Project Structure**
-
+```
 src/main/java/com/appsdeveloperblog/app/ws/mobileappws/
 
 │
@@ -105,7 +105,7 @@ src/main/java/com/appsdeveloperblog/app/ws/mobileappws/
 │
 
 └── exception/                 # Custom Exceptions
-
+```
 
 ---
 
